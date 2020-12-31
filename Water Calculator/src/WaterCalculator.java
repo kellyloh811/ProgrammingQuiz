@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.SwingConstants;
+import java.awt.SystemColor;
 
 public class WaterCalculator {
 
@@ -66,6 +67,7 @@ public class WaterCalculator {
 		textFieldWeight.setColumns(10);
 		
 		JButton btnTellMe = new JButton("Tell Me");
+		btnTellMe.setBackground(SystemColor.activeCaption);
 		btnTellMe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int weight;
